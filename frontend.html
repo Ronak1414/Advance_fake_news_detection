@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Article Checker</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type="text"] {
+			padding: 10px;
+			width: 400px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+        body {
+  background-image: url('https://assets.siemens-energy.com/siemens/assets/api/uuid:bd9ee38e-f4d8-478b-b09a-e25b924cd1ae/width:1125/quality:high/technical-paper-and-recordings.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+img {
+        float: right;
+      }
+
+
+
+	</style>
+</head>
+<body>
+    <img src="https://i0.wp.com/www.scholarshipsinindia.com/wp-content/uploads/kavach-2023-national-level-cybersecurity-hackathon.jpg?fit=200%2C200&ssl=1:large" height="108px" width="216px" />
+    <br>
+    <br>
+    <h1 style="color: azure; font: size 200px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><center>Hi! AMIGO lets see if your article is genuine or fake.</center></h1>
+    
+	<form onsubmit="submitForm(event)">
+		<label for="url" style="color: azure;font-size: xx-large;font-family: cursive;">News article URL: </label>
+		<input type="text" id="url" name="url" placeholder="Enter news article URL"><img src="https://media.tenor.com/hE0T8D0GpXsAAAAC/joinblink-blink.gif" height="200px" width="200px" />
+        <br>
+        <br>
+		<button type="submit">Check Article</button>
+        <br>
+        <br>
+        <p style="color:aliceblue;color:azure;font-size:x-large;font-family: monospace;">
+            WE APPRECIATE YOUR CONCERN FOR THE SOCIETY BY DOING YOUR PART TO STOP THE SPREAD OF FAKE NEWS.
+            <br>
+- Fake news was one of the three most significant new disturbing Internet trends that must first be resolved if the Internet is to be capable of truly "serving humanity." <br>
+-The impact of fake news has become a worldwide phenomenon. Fake news is often spread through the use of fake news websites, which, in order to gain credibility, specialize in creating attention-grabbing news, which often impersonate well-known news sources.
+        </p>
+
+	</form>
+	<script>
+		function submitForm(event) {
+			event.preventDefault();
+			var url = document.getElementById("url").value;
+			// Call your script with the URL parameter
+			// Display the pop-up message with the results
+		}
+	</script>
+</body>
+</html>
